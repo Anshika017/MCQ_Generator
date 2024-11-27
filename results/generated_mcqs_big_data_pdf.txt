@@ -1,0 +1,39 @@
+## MCQ 1
+Question: Which chart type is best suited for visualizing trends over a long period with a large number of data points?
+A) Bar Chart
+B) Pie Chart
+C) Line Chart
+D) Column Chart
+Correct Answer: C
+
+## MCQ 2
+Question: According to the text, what is a key benefit of using data visualization?
+A) It simplifies complex data relationships for easier understanding.
+B) It eliminates the need for raw data analysis.
+C) It guarantees accurate interpretation of data.
+D) It's solely used in business and financial analysis.
+Correct Answer: A
+
+## MCQ 3
+Question: When presenting data on a column chart with a time dimension, how should the time axis be oriented?
+A) From top to bottom
+B) From right to left
+C) From left to right
+D) It doesn't matter
+Correct Answer: C
+
+## MCQ 4
+Question: What is the primary purpose of a scatter chart?
+A) Comparing values over time
+B) Showing composition of a whole
+C) Correlation and distribution analysis
+D) Displaying project progress
+Correct Answer: C
+
+## MCQ 5
+Question: Which chart type is NOT recommended for comparisons or distributions?
+A) Pie Chart
+B) Bar Chart
+C) Scatter Plot
+D) Column Chart
+Correct Answer: A
