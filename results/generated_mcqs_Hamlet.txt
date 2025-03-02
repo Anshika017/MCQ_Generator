@@ -1,180 +1,25 @@
 ## MCQ 1
-Question: Where can the provided text be found?
-A) A program from a Shakespeare play
-B) The contents page of a Folger Shakespeare Library edition
-C) A review of a Shakespearean performance
-D) A Shakespeare biography
-Correct Answer: B
+Question: According to the provided text, where can one find the Folger Shakespeare Library's digital texts?
+A) www.folger.org
+B) www.folgerdigitaltexts.org
+C) www.shakespeare.org
+D) www.digitalfolgertexts.org
+Correct Answer: B) www.folgerdigitaltexts.org
+
 
 ## MCQ 2
-Question: How many acts are presented in the listed contents?
-A) 3
-B) 4
-C) 5
-D) Not specified
-Correct Answer: C
-
-## MCQ 3
-Question:  Which section precedes the "Textual Introduction"?
+Question:  What section precedes the "Textual Introduction" in the listed contents?
 A) Synopsis
 B) From the Director of the Folger Shakespeare Library
 C) Characters in the Play
 D) Act 1, Scene 1
-Correct Answer: B
-
-## MCQ 4
-Question:  What is the expected format after the “Characters in the Play” section?
-A) A summary of the entire play.
-B) The beginning of the play's text, divided into scenes and acts.
-C) Biographical information about Shakespeare.
-D) Critical analysis of the play.
-Correct Answer: B
-
-## MCQ 5
-Question:  How many scenes are listed under Act 1?
-A) 3
-B) 4
-C) 5
-D) 6
-Correct Answer: C
-
-## MCQ 6
-Question:  Which Act has the most scenes listed?
-A) Act 4
-B) Act 5
-C) Act 1
-D) Act 2
-Correct Answer: A
-
-## MCQ 7
-Question: Which section appears twice in the contents?
-A) Synopsis
-B) From the Director of the Folger Shakespeare Library
-C) Characters in the Play
-D) Textual Introduction
-Correct Answer: B
-
-## MCQ 8
-Question: According to the director, how long ago were Shakespeare’s plays and poems composed?
-A) Two hundred years ago
-B) Three hundred years ago
-C) Four hundred years ago
-D) Five hundred years ago
-Correct Answer: C
-
-## MCQ 9
-Question: What has happened to Shakespeare’s works since their composition?
-A) They have remained primarily in England.
-B) They have traveled the globe.
-C) They have been lost and rediscovered.
-D) They have been adapted into operas.
-Correct Answer: B
-
-## MCQ 10
-Question: What does the director invite readers to do with Shakespeare's works?
-A) Memorize them
-B) Critique them
-C) Make them their own
-D) Translate them
-Correct Answer: C
-
-## MCQ 11
-Question:  What are New Folger Editions readers part of, according to the director?
-A)  A competition to understand Shakespeare
-B) An ongoing process of "taking up Shakespeare"
-C) A scholarly debate about Shakespeare's true intentions
-D) A movement to modernize Shakespeare's language
-Correct Answer: B
-
-## MCQ 12
-Question:  What is described as potentially "old or unusual"?
-A) Shakespeare's handwriting
-B) Shakespeare's stage directions
-C) Shakespeare's language
-D) Shakespeare's plots
-Correct Answer: C
-
-## MCQ 13
-Question: What does the director suggest about Shakespeare's thinking?
-A) He thought very slowly and deliberately.
-B) He thought a mile a minute.
-C) His thoughts were often disorganized and confusing.
-D) His thoughts were primarily focused on visual imagery.
-Correct Answer: B
-
-## MCQ 14
-Question: What are Shakespeare's words said to paint?
-A) Portraits of historical figures
-B) Pictures that shift like clouds
-C) Landscapes of his hometown
-D) Abstract images with hidden meanings
-Correct Answer: B
-
-## MCQ 15
-Question:  The director's message focuses on:
-A) The difficulty of understanding Shakespeare
-B) The enduring relevance and adaptability of Shakespeare
-C) The historical context of Shakespeare's plays
-D) The performance history of Shakespeare's works
-Correct Answer: B
-
-## MCQ 16
-Question:  The word "exper" at the end of the excerpt likely suggests the beginning of which word?
-A) Experience
-B) Experiment
-C) Expert
-D) Expense
-Correct Answer: A
+Correct Answer: B) From the Director of the Folger Shakespeare Library
 
 
-## MCQ 17
-Question:  What is the primary purpose of the provided text?
-A) To summarize the plot of a Shakespeare play
-B) To introduce a Folger Shakespeare Library edition
-C) To provide a biography of Shakespeare
-D) To offer critical analysis of a Shakespeare play
-Correct Answer: B
-
-
-## MCQ 18
-Question:  What is the Folger Shakespeare Library likely to be?
-A) A theatre company
-B) A publisher of Shakespeare's works
-C) A historical society
-D) A museum dedicated to Shakespeare
-Correct Answer: B
-
-
-## MCQ 19
-Question: Where would you expect to find Act 2, Scene 2?
-A) Before Act 1, Scene 1
-B) Between Act 2, Scene 1 and Act 3, Scene 1
-C) After Act 5, Scene 2
-D) Before the synopsis
-Correct Answer: B
-
-
-## MCQ 20
-Question: What is the relationship between the scenes and acts?
-A) Acts are subdivisions of scenes.
-B) Scenes are subdivisions of acts.
-C) Acts and scenes are unrelated.
-D) Scenes are summaries of acts.
-Correct Answer: B
-
-## MCQ 21
-Question: What is a "synopsis" likely to provide?
-A) A detailed analysis of the play's themes
-B) A summary of the play's plot
-C) Biographical information about the playwright
-D) A list of characters in the play
-Correct Answer: B
-
-
-## MCQ 22
-Question: What does "textual introduction" likely refer to?
-A) A summary of the play's plot
-B) Information about the source text and editorial choices
-C) A biography of Shakespeare
-D) An analysis of the play's characters
-Correct Answer: B
+## MCQ 3
+Question:  The Director of the Folger Shakespeare Library describes Shakespeare's language as:
+A) Simple and easy to understand
+B) Old and unusual, yet new
+C) Dull and uninspiring
+D) Modern and contemporary
+Correct Answer: B) Old and unusual, yet new

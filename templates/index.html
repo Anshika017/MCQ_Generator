@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -60,3 +60,130 @@
     </div>
 </body>
 </html>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Generator</title>
+    <style>
+        /* Gradient Background */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Main Container */
+        .container {
+            width: 90%;
+            max-width: 450px;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            animation: fadeIn 0.6s ease-in-out;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .form-group {
+            text-align: left;
+            margin-bottom: 18px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #555;
+            font-size: 14px;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* Input Fields */
+        input[type="file"],
+        input[type="number"] {
+            width: 95%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 14px;
+            background: #f8f9fa;
+            transition: 0.3s;
+        }
+
+        input[type="file"]:hover,
+        input[type="number"]:focus {
+            border-color: #6a11cb;
+            background: #ffffff;
+        }
+
+        /* Styled Submit Button */
+        button {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(135deg, #ff7eb3, #ff758c);
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 3px 10px rgba(255, 117, 140, 0.3);
+        }
+
+        button:hover {
+            background: linear-gradient(135deg, #ff758c, #ff3d67);
+            box-shadow: 0 5px 15px rgba(255, 61, 103, 0.5);
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .container {
+                width: 85%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Generate MCQs from Your Text</h1>
+        <form action="/generate" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="file">Upload Document (PDF, TXT, DOCX)</label>
+                <input type="file" name="file" required>
+            </div>
+
+            <div class="form-group">
+                <label for="num_questions">Number of Questions</label>
+                <input type="number" name="num_questions" min="1" required>
+            </div>
+
+            <button type="submit">Generate MCQs</button>
+        </form>
+    </div>
+
+</body>
+</html>
+

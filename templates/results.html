@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -109,5 +109,168 @@
         <a href="/download/{{ pdf_filename }}">Download as PDF</a>
     </div>
     
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Results</title>
+    <style>
+        /* Background Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Container Styling */
+        .container {
+            width: 90%;
+            max-width: 600px;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            animation: fadeIn 0.6s ease-in-out;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        /* MCQ Styling */
+        .mcq {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #e9f5ff;
+            border: 2px solid #007bff;
+            border-radius: 8px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .mcq:hover {
+            background-color: #d1ecf1;
+            transform: scale(1.02);
+        }
+
+        .question {
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .options {
+            margin: 10px 0;
+            text-align: left;
+        }
+
+        .option {
+            padding: 8px;
+            margin: 5px 0;
+            border: 2px solid #007bff;
+            border-radius: 6px;
+            transition: background-color 0.3s;
+        }
+
+        .option:hover {
+            background-color: #cce5ff;
+        }
+
+        .correct-answer {
+            font-weight: bold;
+            color: green;
+            margin-top: 10px;
+        }
+
+        /* Button Styling */
+        .download-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        a {
+            flex: 1;
+            padding: 12px;
+            background: linear-gradient(135deg, #ff7eb3, #ff758c);
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 8px;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            margin: 0 5px;
+        }
+
+        a:hover {
+            background: linear-gradient(135deg, #ff758c, #ff3d67);
+            box-shadow: 0 4px 10px rgba(255, 61, 103, 0.5);
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                width: 85%;
+            }
+
+            .download-buttons {
+                flex-direction: column;
+            }
+
+            a {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Generated MCQs</h1>
+    
+        {% for mcq in mcqs.split("## MCQ") %}
+            {% if mcq.strip() %}
+                <div class="mcq">
+                    {% set parts = mcq.split('A)') %}
+                    <div class="question">{{ parts[0].strip() }}</div>
+                    <div class="options">
+                        {% if parts|length > 1 %} <div class="option">A) {{ parts[1].split('B)')[0].strip() }}</div> {% endif %}
+                        {% if parts|length > 1 and parts[1].split('B)')|length > 1 %} <div class="option">B) {{ parts[1].split('B)')[1].split('C)')[0].strip() }}</div> {% endif %}
+                        {% if parts|length > 1 and parts[1].split('B')|length > 1 and parts[1].split('C)')|length > 1 %} <div class="option">C) {{ parts[1].split('C)')[1].split('D)')[0].strip() }}</div> {% endif %}
+                        {% if parts|length > 1 and parts[1].split('C')|length > 1 and parts[1].split('D)')|length > 1 %} <div class="option">D) {{ parts[1].split('D)')[1].split('Correct Answer:')[0].strip() }}</div> {% endif %}
+                    </div>
+                    <div class="correct-answer">
+                        {% if 'Correct Answer:' in mcq %} Correct Answer: {{ mcq.split('Correct Answer:')[1].strip() }} {% endif %}
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    
+        <div class="download-buttons">
+            <a href="/download/{{ txt_filename }}">Download as TXT</a>
+            <a href="/download/{{ pdf_filename }}">Download as PDF</a>
+        </div>
+    </div>
+
 </body>
 </html>
