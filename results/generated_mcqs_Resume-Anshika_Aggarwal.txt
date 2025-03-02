@@ -1,0 +1,71 @@
+## MCQ 1
+Question: What is Anshika Aggarwal's current GPA in her B.Tech program?
+A) 91.6%
+B) 92.4%
+C) 8.83/10.0
+D) 7.9/10.0
+Correct Answer: C
+
+## MCQ 2
+Question: Which institution is Anshika Aggarwal currently attending for her B.Tech?
+A) ConventofJesusandMary,Dehradun
+B) Graphic Era Deemed to be University, Dehradun
+C) Graphic Era University, Delhi
+D) Indian Institute of Technology, Dehradun
+Correct Answer: B
+
+## MCQ 3
+Question:  What is the name of the farming web platform project Anshika worked on?
+A) SmartTravelPlanner
+B) Harvestica – Better Crops, Better Yields
+C) MCQ Generator Using AI
+D) Crop Management System
+Correct Answer: B
+
+## MCQ 4
+Question:  What was the primary goal of the Harvestica project?
+A) To develop a travel planning application.
+B) To create a tool for generating MCQs.
+C) To help smallholder farmers make data-driven decisions.
+D) To automate document management for travelers.
+Correct Answer: C
+
+## MCQ 5
+Question: When did Anshika work on the SmartTravelPlanner project?
+A) Nov, 2023 - Jan, 2024
+B) May, 2024 - Aug, 2024
+C) Nov, 2024 - Jan, 2025
+D) Aug, 2022 - Present
+Correct Answer: B
+
+## MCQ 6
+Question: What technology was central to the development of both Harvestica and SmartTravelPlanner?
+A) Blockchain
+B) Cloud Computing
+C) AI/ML
+D) Internet of Things
+Correct Answer: C
+
+## MCQ 7
+Question: What was the purpose of the MCQ Generator Using AI project?
+A) To predict plant diseases
+B) To provide live travel advisories
+C) To create an automated tool for generating MCQs
+D) To recommend fertilizers
+Correct Answer: C
+
+## MCQ 8
+Question: In which year did Anshika complete her ISC?
+A) 2020
+B) 2022
+C) 2023
+D) 2024
+Correct Answer: B
+
+## MCQ 9
+Question: What was Anshika's score in the ICSE exam?
+A) 8.83/10.0
+B) 91.6%
+C) 92.4%
+D) 79.6%
+Correct Answer: C

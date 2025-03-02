@@ -1,0 +1,74 @@
+## MCQ 1
+Question: What is the title of the book?
+A) Cuentos para la clase de Inglés
+B) Short Stories for Children
+C)  Ilustraciones de Virginia Piñón
+D) Both A and B
+Correct Answer: D
+
+## MCQ 2
+Question: Who illustrated the book?
+A) Yamila Loscar
+B) Virginia Piñón
+C) Axel Kicillof
+D) Alberto Sileoni
+Correct Answer: B
+
+## MCQ 3
+Question: Who adapted the stories?
+A)  Virginia Piñón
+B) Axel Kicillof and Verónica Magario
+C) Yamila Loscar, Florencia Morales, and Patricia Guzmán
+D) The Dirección General de Cultura y Educación
+Correct Answer: C
+
+## MCQ 4
+Question: Who published the book?
+A) A private publishing house
+B) Dirección General de Cultura y Educación de la Provincia de Buenos Aires
+C) The Governor of Buenos Aires
+D) The illustrators of the book
+Correct Answer: B
+
+## MCQ 5
+Question: What is the ISBN of the book?
+A) 808.899282
+B) 978-987-676-115-4
+C) 21 x 15 cm
+D)  2022
+Correct Answer: B
+
+## MCQ 6
+Question: What is the CDD classification of the book?
+A) 978-987-676-115-4
+B) Short Stories
+C) 808.899282
+D)  Children's Literature
+Correct Answer: C
+
+
+## MCQ 7
+Question:  Who is the Governor of Buenos Aires mentioned in the text?
+A) Alberto Sileoni
+B) Axel Kicillof
+C) Verónica Magario
+D) Virginia Piñón
+Correct Answer: B
+
+
+## MCQ 8
+Question: What year was the adapted edition published?
+A) Not mentioned in the text
+B) 2021
+C) 2022
+D) 2023
+Correct Answer: C
+
+
+## MCQ 9
+Question:  Which department within the Buenos Aires provincial government oversaw the book's creation?
+A) Dirección Provincial de Educación Primaria
+B)  Dirección General de Cultura y Educación
+C)  Governor's Office
+D)  Subsecretaría de Educación
+Correct Answer: B
