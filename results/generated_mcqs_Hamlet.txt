@@ -1,25 +1,31 @@
 ## MCQ 1
-Question: According to the provided text, where can one find the Folger Shakespeare Library's digital texts?
-A) www.folger.org
-B) www.folgerdigitaltexts.org
-C) www.shakespeare.org
-D) www.digitalfolgertexts.org
-Correct Answer: B) www.folgerdigitaltexts.org
-
+Question: According to the text, how long ago were Shakespeare's plays and poems composed?
+A) 200 years ago
+B) 300 years ago
+C) 400 years ago
+D) 500 years ago
+Correct Answer: C
 
 ## MCQ 2
-Question:  What section precedes the "Textual Introduction" in the listed contents?
-A) Synopsis
-B) From the Director of the Folger Shakespeare Library
-C) Characters in the Play
-D) Act 1, Scene 1
-Correct Answer: B) From the Director of the Folger Shakespeare Library
-
+Question: What organization is associated with the provided text?
+A) Globe Theater
+B) Royal Shakespeare Company
+C) Folger Shakespeare Library
+D) British Library
+Correct Answer: C
 
 ## MCQ 3
-Question:  The Director of the Folger Shakespeare Library describes Shakespeare's language as:
+Question: What is the name of the digital text editions mentioned in the text?
+A) Modern Shakespeare Editions
+B) New Folger Editions
+C) Original Shakespeare Texts
+D) Shakespeare's First Folio
+Correct Answer: B
+
+## MCQ 4
+Question: The text describes Shakespeare's language as:
 A) Simple and easy to understand
-B) Old and unusual, yet new
-C) Dull and uninspiring
+B) Old or unusual and therefore new
+C) Dull and uninteresting
 D) Modern and contemporary
-Correct Answer: B) Old and unusual, yet new
+Correct Answer: B

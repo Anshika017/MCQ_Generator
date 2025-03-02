@@ -1,55 +1,23 @@
 ## MCQ 1
-Question: What is Anshika Aggarwal's current GPA at Graphic Era Deemed to be University?
+Question: What is Anshika Aggarwal's current GPA in her B.Tech in Computer Science at Graphic Era Deemed to be University?
 A) 91.6%
 B) 92.4%
 C) 8.83/10.0
-D) 7.9/10
+D) 7.9/10.0
 Correct Answer: C
 
 ## MCQ 2
-Question: Which degree is Anshika Aggarwal currently pursuing?
-A) B.Tech in Mechanical Engineering
-B) B.Tech in Computer Science
-C) B.Sc in Computer Science
-D) M.Tech in Computer Science
-Correct Answer: B
+Question:  Which project did Anshika Aggarwal work on that focused on aiding smallholder farmers with data-driven decisions?
+A) Smart Travel Planner
+B) MCQ Generator Using AI
+C) Harvestica – Better Crops, Better Yields
+D) None of the above
+Correct Answer: C
 
 ## MCQ 3
-Question:  When did Anshika Aggarwal work on the Harvestica project?
-A) Nov, 2023 - Jan, 2024
+Question: When did Anshika Aggarwal work on the MCQ Generator Using AI project?
+A) Nov, 2024 - Jan, 2025
 B) May, 2024 - Aug, 2024
-C) Nov, 2024 - Jan, 2025
+C) Nov, 2023 - Jan, 2024
 D) Aug, 2022 - Present
 Correct Answer: C
-
-## MCQ 4
-Question: What is the purpose of the Smart Travel Planner project?
-A) Generating MCQs across multiple subjects.
-B) Predicting plant diseases and recommending fertilizers.
-C) Automating document management and providing live travel advisories.
-D) Analyzing crop yields for smallholder farmers.
-Correct Answer: C
-
-## MCQ 5
-Question:  What technology did Anshika Aggarwal utilize in the Harvestica project?
-A) Blockchain
-B) Cloud Computing
-C) AI/ML
-D) Internet of Things
-Correct Answer: C
-
-## MCQ 6
-Question: Which school did Anshika Aggarwal attend for her ISC and ICSE?
-A) Graphic Era Deemed to be University
-B) Convent of Jesus and Mary, Dehradun
-C) Not mentioned in the text
-D) Dehradun Public School
-Correct Answer: B
-
-## MCQ 7
-Question: What was the focus of the MCQ Generator Using AI project?
-A) Developing a travel planning application
-B) Creating a tool for generating contextually relevant MCQs
-C) Building a platform for crop recommendation and disease prediction
-D) Designing an automated document management system
-Correct Answer: B
