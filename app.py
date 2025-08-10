@@ -8,29 +8,17 @@ import google.generativeai as genai
 from fpdf import FPDF  # pip install fpdf
 from dotenv import load_dotenv
 
-# ----------------------------
-# Load environment variables
-# ----------------------------
-load_dotenv(".env.local")  # Load .env.local file
+load_dotenv(".env.local")  
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
 if not GOOGLE_API_KEY:
-    raise ValueError("🚨 GOOGLE_API_KEY is missing! Please set it in .env.local")
+    raise ValueError("GOOGLE_API_KEY is missing! Please set it in .env.local")
 
-# ----------------------------
-# Logging configuration
-# ----------------------------
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-# ----------------------------
-# Configure Gemini API
-# ----------------------------
 genai.configure(api_key=GOOGLE_API_KEY)
 model = genai.GenerativeModel("gemini-1.5-flash")  # Using flash for higher quota
 
-# ----------------------------
-# Flask app setup
-# ----------------------------
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'uploads/'
 app.config['RESULTS_FOLDER'] = 'results/'
@@ -40,9 +28,6 @@ app.config['ALLOWED_EXTENSIONS'] = {'pdf', 'txt', 'docx'}
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 os.makedirs(app.config['RESULTS_FOLDER'], exist_ok=True)
 
-# ----------------------------
-# Helper Functions
-# ----------------------------
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in app.config['ALLOWED_EXTENSIONS']
 
@@ -121,9 +106,6 @@ def create_pdf(mcqs, filename):
         logging.error(f"Error creating PDF: {e}")
         return None
 
-# ----------------------------
-# Routes
-# ----------------------------
 @app.route('/')
 def index():
     return render_template('index.html')
