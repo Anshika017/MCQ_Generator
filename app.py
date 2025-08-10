@@ -6,24 +6,43 @@ import logging
 from werkzeug.utils import secure_filename
 import google.generativeai as genai
 from fpdf import FPDF  # pip install fpdf
+from dotenv import load_dotenv
 
-# Configure logging
+# ----------------------------
+# Load environment variables
+# ----------------------------
+load_dotenv(".env.local")  # Load .env.local file
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+
+if not GOOGLE_API_KEY:
+    raise ValueError("🚨 GOOGLE_API_KEY is missing! Please set it in .env.local")
+
+# ----------------------------
+# Logging configuration
+# ----------------------------
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-# Set API key
-os.environ["GOOGLE_API_KEY"] = "AIzaSyADzoh56fpNGKBV8VpTbVmX7TeM-H5yPdM"
-genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
-model = genai.GenerativeModel("models/gemini-1.5-pro")
+# ----------------------------
+# Configure Gemini API
+# ----------------------------
+genai.configure(api_key=GOOGLE_API_KEY)
+model = genai.GenerativeModel("gemini-1.5-flash")  # Using flash for higher quota
 
+# ----------------------------
+# Flask app setup
+# ----------------------------
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'uploads/'
 app.config['RESULTS_FOLDER'] = 'results/'
 app.config['ALLOWED_EXTENSIONS'] = {'pdf', 'txt', 'docx'}
 
-# Ensure necessary folders exist
+# Ensure folders exist
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 os.makedirs(app.config['RESULTS_FOLDER'], exist_ok=True)
 
+# ----------------------------
+# Helper Functions
+# ----------------------------
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in app.config['ALLOWED_EXTENSIONS']
 
@@ -58,9 +77,22 @@ def Question_mcqs_generator(input_text, num_questions):
     """
     try:
         response = model.generate_content(prompt)
-        return response.text.strip()
+        logging.info(f"Full Gemini API Response: {response}")
+
+        if hasattr(response, "text") and response.text:
+            return response.text.strip()
+        elif hasattr(response, "candidates"):
+            text_parts = []
+            for part in response.candidates[0].content.parts:
+                if hasattr(part, "text") and part.text:
+                    text_parts.append(part.text)
+            if text_parts:
+                return "\n".join(text_parts).strip()
+
+        logging.error("Gemini returned no usable text.")
+        return None
     except Exception as e:
-        logging.error(f"Error generating MCQs: {e}")
+        logging.exception("Error generating MCQs")
         return None
 
 def save_mcqs_to_file(mcqs, filename):
@@ -89,6 +121,9 @@ def create_pdf(mcqs, filename):
         logging.error(f"Error creating PDF: {e}")
         return None
 
+# ----------------------------
+# Routes
+# ----------------------------
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -112,7 +147,7 @@ def generate_mcqs():
             num_questions = int(request.form['num_questions'])
             mcqs = Question_mcqs_generator(text, num_questions)
             if not mcqs:
-                return "MCQ generation failed."
+                return "MCQ generation failed. Check server logs for details."
             
             txt_filename = f"generated_mcqs_{filename.rsplit('.', 1)[0]}.txt"
             pdf_filename = f"generated_mcqs_{filename.rsplit('.', 1)[0]}.pdf"
@@ -121,7 +156,7 @@ def generate_mcqs():
             
             return render_template('results.html', mcqs=mcqs, txt_filename=txt_filename, pdf_filename=pdf_filename)
         except Exception as e:
-            logging.error(f"Error in MCQ generation process: {e}")
+            logging.exception("Error in MCQ generation process")
             return "An error occurred during MCQ generation."
     
     return "Invalid file format or upload issue"
@@ -134,7 +169,7 @@ def download_file(filename):
     else:
         return "File not found."
 
+
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port, debug=True)
-
